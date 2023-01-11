@@ -8,11 +8,12 @@
     "registry": "https://registry.npmjs.org"
   },
   "scripts": {
+    "commit": "git-cz",
     "build": "tsc",
-    "prepublish": "npm run build",
     "release:major": "standard-version --release-as major",
     "release:minor": "standard-version --release-as minor",
-    "release:patch": "standard-version --release-as patch"
+    "release:patch": "standard-version --release-as patch",
+    "prepublish": "npm run build"
   },
   "files": [
     "dist"
