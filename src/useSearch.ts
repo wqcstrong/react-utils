@@ -1,6 +1,6 @@
 import { useSearchParams } from 'react-router-dom';
 
-export default function useSearch<
+export function useSearch<
   T extends string | string[] = string,
 >(): Record<string, T> {
   const [searchParams] = useSearchParams();
